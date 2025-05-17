@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Air Quality Index (AQI) Information</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pVUqX3IF9dK2TyJdP0ZCRJjlC0B9DXE+q1NTZj2VuKsxT0vK/riTpm8JTbAfg7gAdUD4JZ2HhnW7P2VPLP4VJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/learn.css') }}">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AQI Tracker</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guide">Guide</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" role="main" aria-label="Air Quality Index Information">
+        <h1><i class="fas fa-wind icon" aria-hidden="true"></i>Understanding Air Quality Index (AQI)</h1>
+
+        <p>
+            The <strong>Air Quality Index (AQI)</strong> is a valuable tool that helps us understand how clean or
+            polluted the air around us is. It measures the concentration of various harmful pollutants such as
+            particulate matter (PM2.5 and PM10), nitrogen dioxide (NO<sub>2</sub>), sulfur dioxide (SO<sub>2</sub>),
+            carbon monoxide (CO), and ozone (O<sub>3</sub>).
+            The AQI simplifies this data into a scale that informs us about the potential health risks of the air we
+            breathe daily.
+        </p>
+
+        <h2><i class="fas fa-exclamation-circle icon" aria-hidden="true"></i>Why is AQI Important?</h2>
+        <p>
+            With growing urbanization and industrialization, air pollution has become a serious concern worldwide.
+            Breathing polluted air can lead to severe health problems, damage the environment, and lower the quality of
+            life.
+        </p>
+        <p>
+            The AQI scale ranges from <strong>0 to 500</strong>. Lower values mean cleaner air, while higher values
+            indicate more pollution. It is divided into categories like:
+        </p>
+        <ul>
+            <li><strong>Good</strong> – Air quality is satisfactory and poses little or no risk.</li>
+            <li><strong>Moderate</strong> – Acceptable air quality but may affect sensitive individuals.</li>
+            <li><strong>Unhealthy</strong> – Everyone may experience health effects; sensitive groups more seriously
+                affected.</li>
+            <li><strong>Hazardous</strong> – Serious health effects for everyone; emergency conditions.</li>
+        </ul>
+
+        <h2><i class="fas fa-heartbeat icon" aria-hidden="true"></i>How Does Air Pollution Affect Our Health?</h2>
+        <p>
+            When AQI is high, it means the air contains elevated levels of pollutants that can deeply penetrate our
+            lungs and bloodstream, causing:
+        </p>
+        <ul>
+            <li><strong>Respiratory Issues:</strong> Worsening asthma, bronchitis, and other lung diseases.</li>
+            <li><strong>Cardiovascular Effects:</strong> Increased risks of heart attacks, strokes, and inflammation.
+            </li>
+            <li><strong>Brain Health:</strong> Long-term exposure can impact cognitive function and increase
+                neurological disorder risks.</li>
+            <li><strong>Vulnerable Groups:</strong> Children, elderly, pregnant women, and those with existing health
+                conditions are more at risk.</li>
+        </ul>
+
+        <h2><i class="fas fa-leaf icon" aria-hidden="true"></i>What Can We Do?</h2>
+        <p>
+            Staying updated with daily AQI reports helps us take precautions, like limiting outdoor activities during
+            high pollution days, using air purifiers indoors, and supporting clean energy initiatives.
+        </p>
+        <p>
+            Governments and environmental organizations also use AQI data to enforce policies to reduce emissions and
+            protect public health.
+        </p>
+
+        <h2><i class="fas fa-smile-beam icon" aria-hidden="true"></i>Conclusion</h2>
+        <p>
+            Understanding the Air Quality Index is vital for protecting our lungs, heart, brain, and overall well-being.
+            By being informed and proactive, we can ensure cleaner air and a healthier environment for ourselves and
+            future generations. <span aria-label="Plant emoji" role="img">🌱</span>
+        </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/learn.js') }}"></script>
+</body>
+
+</html>

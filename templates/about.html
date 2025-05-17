@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AQI App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"></div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guide">Guide</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2>🌟 About Us</h2>
+        <div class="content">
+            <p>We are a team of passionate developers and environmental enthusiasts dedicated to creating awareness
+                about air pollution. Our goal is to help individuals understand and monitor the Air Quality Index (AQI)
+                in their area.</p>
+            <p>Through this AQI Prediction Tool, we aim to provide real-time insights and actionable short tips to help
+                everyone breathe cleaner and live healthier. 🌍💚</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+</body>
+
+</html>

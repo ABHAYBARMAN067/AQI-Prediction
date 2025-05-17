@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Use - AQI App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guide.css') }}">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"></div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guide">Guide</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <section id="how-to-use">
+        <h2>How to Use This AQI Prediction App</h2>
+        <ol>
+            <li><strong>Enter Pollution Data:</strong> PM2.5, PM10, NO2, SO2, CO, and O3 values in the form above.</li>
+            <li><strong>Submit the Form:</strong> Click the <em>Predict AQI</em> button to get the air quality index.
+            </li>
+            <li><strong>View Result:</strong> The predicted AQI will be displayed with color-coded health information.
+            </li>
+            <li><strong>Take Precautions:</strong> Follow the tips provided to protect yourself on days with poor air
+                quality.</li>
+            <li><strong>Learn More:</strong> Explore the sections below to understand AQI levels and how to control air
+                pollution.</li>
+        </ol>
+
+        <h2>Pollutants Defined</h2>
+        <ul>
+            <li><strong>PM2.5:</strong> Tiny particles 2.5 micrometers or smaller that can penetrate deep into lungs.
+            </li>
+            <li><strong>PM10:</strong> Larger particles up to 10 micrometers causing irritation to eyes, nose, and
+                throat.</li>
+            <li><strong>NO2:</strong> Nitrogen dioxide gas from vehicles and industry, causing respiratory issues.</li>
+            <li><strong>SO2:</strong> Sulfur dioxide gas from burning fossil fuels, harmful to lungs.</li>
+            <li><strong>CO:</strong> Carbon monoxide gas that reduces oxygen in the blood and can be dangerous.</li>
+            <li><strong>O3:</strong> Ground-level ozone gas causing chest pain and breathing problems.</li>
+        </ul>
+    </section>
+    <script src="{{ url_for('static', filename='js/guide.js') }}"></script>
+</body>
+
+</html>
